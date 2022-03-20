@@ -3,9 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Adrián Tur · Bootstrap v5.0</title>
+    <title>Adrián Tur · Tur Time</title>
 
   
    <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +33,7 @@
   </head>
   <body>
 
+
     <!--nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -44,17 +43,18 @@
         <a class="navbar-brand" href="./index.html">Tur</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#ofrecemos">Que ofrecemos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Precios</a>
+              <a class="nav-link"  href="#precios">Precios</a>
             </li>
             
           </ul>
@@ -68,20 +68,52 @@
       </div>
     </nav>
 
+    <div id="inicio"></div>
 
-    <!--description-->
+    <!--descripción-->
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Tur Time</h1>
-      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      <p class="fs-5 text-muted">Esta herramienta ofrece todo lo que tu empresa necesita para el control de fichajes.</p>
     </div>
+
+    <!--que ofrecemos-->
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal" id="ofrecemos">¿Que ofrecemos?</h1>
+      <p class="fs-5 text-muted mt-3">En Tur Time sabemos que el control de fichajes es muy importante y por ello hemos 
+        desarrollado una aplicación con diferentes productos.
+      </p>
+<!--Tabla-->
+      <div class="container">
+        <div class="row">
+          <div class="col" style="margin-top:130px">
+            <p>En Tur Time ofrecemos un control de fichajes vía web muy eficaz, herramientas administrativas
+              e implementaciones con varios dispositivos de fichaje.
+            </p>
+          </div>
+          <div class="col">
+           <img src="./../media/fichaje1.jpeg" width="450px" height="300px">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="./../media/fichaje2.jpeg" width="600px" height="300px">
+            </div>
+            <div class="col" style="margin-top:130px">
+              <p>Esta pensada para poder exportar tus datos a otro software, nos adaptamos a tus necesidades.
+              </p>
+             
+            </div>
+          </div>
+
    
 
 <!--PRECIOS-->
-<div class="container py-3">
+<div class="container py-3,barra_iconos mt-2">
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Precios</h1>
-      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-    </div>
+      <h1 class="display-4 fw-normal" id="precios">Precios</h1>
+      </div>
   </header>
   <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -96,7 +128,7 @@
               <li>10 usuarios incluidos</li>
               <li>2 GB de almacenamiento</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Registrate gratis!</button>
+            <a class="w-100 btn btn-lg btn-outline-primary" href="./register.html">Registrate gratis!</a>
           </div>
         </div>
       </div>
@@ -137,15 +169,13 @@
 <!--Footer-->
 <div class="footer-basic">
   <footer>
-      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
       <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Inicio</a></li>
-          <li class="list-inline-item"><a href="#">Servicios</a></li>
+          <li class="list-inline-item"><a href="#inicio">Inicio</a></li>
+          <li class="list-inline-item"><a href="#ofrecemos">Servicios</a></li>
           <li class="list-inline-item"><a href="#">Sobre Nosotros</a></li>
-          <li class="list-inline-item"><a href="#">Terminos</a></li>
           <li class="list-inline-item"><a href="#">Politica de privacidad</a></li>
       </ul>
-      <p class="copyright">Adrián Tur © 2022</p>
+      <p class="copyright">Adrián Tur Capellà © 2022</p>
   </footer>
 </div>
   </body>
